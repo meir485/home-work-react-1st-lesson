@@ -15,9 +15,14 @@ function App() {
     <div className="App">
       <Header/>
       { console.log(posts[0])}
-      
-      <Body num3={num3} f={s} />
-      <Post posts={posts[0]} />
+ for(let i = 0 ; i <posts.length ; i++){   
+    <Post posts={posts[i]} />
+ })
+
+  
+
+     
+        
     </div>
   );
 }
