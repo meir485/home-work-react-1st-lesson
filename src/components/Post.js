@@ -3,17 +3,17 @@ import React from 'react'
 
 
 export default function Post(props) {
-    return (
-        <div>
+
+    //     for (let i = 0; i < this.props.post.length; i++) {
+    //   x.push()
+    // }
+    const postslis = props.post.map(post =>
+      <li>{<h2><b>{post.title}</b>: {post.info}</h2>}</li>
+      );
     
-   {     console.log(props.posts.info+"6") }
- 
-            <h2><b>{props.posts.title}</b>: {props.posts.info}</h2>
-     
-                
-      
-           
-          
-        </div>
+    return (
+        <ul>
+           {postslis}
+        </ul>
     )
 }
