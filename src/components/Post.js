@@ -8,7 +8,7 @@ export default function Post(props) {
     //   x.push()
     // }
     const postslis = props.post.map(post =>
-      <li>{<h2><b>{post.title}</b>: {post.info}</h2>}</li>
+      <li><span>X</span>{<h2><b>{post.title}</b>: {post.info}</h2>}</li>
       );
     
     return (
